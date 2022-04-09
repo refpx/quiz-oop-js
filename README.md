@@ -33,7 +33,7 @@
 
 ## About The Project
 
-[![Quiz app][project-screenshot]](https://example.com)
+[![Quiz app][project-screenshot]](https://github.com/refpx/quiz-oop-js/blob/main/screenshot.png?raw=true)
 
 A simple quiz application to practice object orientend programming in Javascript. This quiz get dynamically questions from the [QuizAPI](https://quizapi.io/docs/1.0/overview) based on topic and questions limit.
 
