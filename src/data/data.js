@@ -1,6 +1,6 @@
 import { Question } from '../models/Question.js'
 
-const API_KEY = process.env.API_KEY
+const API_KEY = 'ENTER YOUR API'
 const URI = 'https://quizapi.io'
 const URI_VERSION = '/api/v1'
 
