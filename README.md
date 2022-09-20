@@ -1,7 +1,5 @@
 <div id="top"></div>
 
-[![MIT License][license-shield]][license-url]
-
 # Quiz - Object Oriented Programming in JavaScript
 
 <!-- TABLE OF CONTENTS -->
