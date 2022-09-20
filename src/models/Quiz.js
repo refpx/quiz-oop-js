@@ -1,5 +1,5 @@
 // @ts-check
-import { Question } from "./Question.js";
+import { Question } from './Question.js'
 
 export class Quiz {
   /**
@@ -7,9 +7,9 @@ export class Quiz {
    * @param {Question[]} questions this is the array of questions
    */
   constructor(questions) {
-    this.questions = questions;
-    this.score = 0;
-    this.questionIndex = 0;
+    this.questions = questions
+    this.score = 0
+    this.questionIndex = 0
   }
 
   /**
@@ -17,7 +17,7 @@ export class Quiz {
    * @returns {Question} the current question
    */
   getQuestionIndex() {
-    return this.questions[this.questionIndex];
+    return this.questions[this.questionIndex]
   }
 
   /**
@@ -26,10 +26,10 @@ export class Quiz {
    */
   guess(answer) {
     if (this.getQuestionIndex().checkAnswer(answer)) {
-      this.score++;
+      this.score++
     }
 
-    this.questionIndex++;
+    this.questionIndex++
   }
 
   /**
@@ -37,6 +37,6 @@ export class Quiz {
    * @returns {boolean} true if there are still questions left
    */
   isEnded() {
-    return this.questionIndex === this.questions.length;
+    return this.questionIndex === this.questions.length
   }
 }

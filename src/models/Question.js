@@ -18,16 +18,16 @@ export class Question {
     category,
     difficulty
   ) {
-    this.question = question;
-    this.answers = answers;
-    this.multiple_correct_answers = multiple_correct_answers;
-    this.correct_answers = correct_answers;
-    this.tags = tags;
-    this.category = category;
-    this.difficulty = difficulty;
+    this.question = question
+    this.answers = answers
+    this.multiple_correct_answers = multiple_correct_answers
+    this.correct_answers = correct_answers
+    this.tags = tags
+    this.category = category
+    this.difficulty = difficulty
   }
 
   checkAnswer(correctAnswer) {
-    return this.correct_answers[`${correctAnswer}_correct`] === "true";
+    return this.correct_answers[`${correctAnswer}_correct`] === 'true'
   }
 }

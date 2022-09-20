@@ -6,8 +6,8 @@ export class UI {
    * @param {string} question Question to render
    */
   showQuestion(question) {
-    const questionTitle = document.getElementById("questionTitle");
-    questionTitle.innerText = question;
+    const questionTitle = document.getElementById('questionTitle')
+    questionTitle.innerText = question
   }
 
   /**
@@ -15,16 +15,16 @@ export class UI {
    * @param {string[]} answers Array of answers to render
    */
   showAnswers(answers, typeAnswers, callback) {
-    const answersContainer = document.getElementById("answersContainer");
-    answersContainer.innerHTML = "";
+    const answersContainer = document.getElementById('answersContainer')
+    answersContainer.innerHTML = ''
 
     for (let answer in answers) {
       if (answers[answer]) {
-        const answerElement = document.createElement("button");
-        answerElement.className = "answer";
-        answerElement.innerText = answers[answer];
-        answerElement.addEventListener("click", () => callback(answer));
-        answersContainer.appendChild(answerElement);
+        const answerElement = document.createElement('button')
+        answerElement.className = 'answer'
+        answerElement.innerText = answers[answer]
+        answerElement.addEventListener('click', () => callback(answer))
+        answersContainer.appendChild(answerElement)
       }
     }
 
@@ -56,8 +56,8 @@ export class UI {
   showProgress(currentQuestion, totalQuestions) {
     const progress = `
       Question ${currentQuestion} of ${totalQuestions}
-    `;
-    document.getElementById("progress").innerText = progress;
+    `
+    document.getElementById('progress').innerText = progress
   }
 
   /**
@@ -69,12 +69,12 @@ export class UI {
       <h1>Result</h1>
       <h2>Your score: ${score}</h2>
       <button class="answer" id="restart">Restart</button>
-    `;
-    document.getElementById("quizContainer").innerHTML = scoreContainer;
+    `
+    document.getElementById('quizContainer').innerHTML = scoreContainer
 
-    const restartButton = document.getElementById("restart");
-    restartButton.addEventListener("click", () => {
-      location.reload();
-    });
+    const restartButton = document.getElementById('restart')
+    restartButton.addEventListener('click', () => {
+      location.reload()
+    })
   }
 }

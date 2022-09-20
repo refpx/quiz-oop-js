@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   background: var(--veryLightGray);
   display: flex;
@@ -30,7 +30,7 @@ body {
 
 #quizContainer {
   background-color: var(--veryLightGray);
-  width: 30rem;
+  width: 42rem;
   padding: 4rem;
   text-align: center;
   border-radius: 10px;
@@ -73,7 +73,7 @@ button {
   margin: 10px 0;
   cursor: pointer;
   border-radius: 5px;
-  width: 300px;
+  width: 380px;
 }
 .answer {
   background-color: var(--veryLightGray);
@@ -125,7 +125,7 @@ select {
   margin: 30px 0;
 }
 
-input[type="number"] {
+input[type='number'] {
   padding: 10px;
   border: 1px solid var(--grayishBlue);
   border-radius: 5px;
